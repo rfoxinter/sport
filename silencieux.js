@@ -38,7 +38,6 @@ function nouveau(){
             eval('nouveau_'+ch+'()');
             c=eval(ch);
         };
-        console.log(c);
         Exercice=c[Math.floor(Math.random()*c.length)];
         img.src='images/'+Exercice;
         c.splice(c.indexOf(Exercice),1);
