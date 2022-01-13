@@ -10,16 +10,16 @@ button {
 
 #exercice {
     top: 602.5px;
-    left: 300px;
+    left: 108px;
 }
 
 #enregistrer {
     top: 602.5px;
-    left: 750px;
+    left: 458px;
 }
 
 #img_container{
-    width: 1200px;
+    width: 700px;
     height: 600px;
     position: relative;
     text-align: center;
