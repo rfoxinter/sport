@@ -1,34 +1,46 @@
 button {
     position: absolute;
-    height: 75px;
-    width: 150px;
-    padding: 1px;
+    height: 5vw;
+    width: 15vw;
     text-align: center;
-    font-size: 25px;
-    font-family: Calibri, Arial, sans-serif ;
+    font-size: 2vw;
+    font-family: Calibri, Arial, sans-serif;
 }
 
 #exercice {
-    top: 602.5px;
-    left: 108px;
+    top: min(75vh, calc(100vh - 12.5vw));
+    left: 25vw;
 }
 
 #enregistrer {
-    top: 602.5px;
-    left: 458px;
+    top:  min(75vh, calc(100vh - 12.5vw));
+    left: 60vw;
 }
 
 #img_container{
-    width: 700px;
-    height: 600px;
-    position: relative;
+    width:  80vw;
+    height:  calc(min(75vh, calc(100vh - 12.5vw)) - 20px);
+    top: 10px;
+    left: 10vw;
+    position: absolute;
     text-align: center;
+}
+
+#normal{
+    top: 47.5vh;
+    left: 25vw;
+}
+
+#silencieux{
+    top: 47.5vh;
+    left: 60vw;
 }
 
 img{
     margin: 0;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
 }
