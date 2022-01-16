@@ -5,7 +5,7 @@ var j = ['jambes/air-squat.jpg', 'jambes/calves-step-bar.jpg', 'jambes/chair-iso
 
 var n = 0;
 const img = document.getElementById('img');
-var entrainement = 'silencieux\n\n';
+var entrainement = 'silencieux\r\n\r\n';
 var l = ['a','j','b_c'];
 var pre = 'j';
 
@@ -28,7 +28,7 @@ function nouveau(){
         Exercice=e[Math.floor(Math.random()*e.length)];
         img.src='images/'+Exercice;
         e.splice(e.indexOf(Exercice),1);
-        entrainement+='e'+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\n'
+        entrainement+='e'+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\r\n'
     }
     else{
         l.splice(l.indexOf(pre),1);
@@ -43,7 +43,7 @@ function nouveau(){
         c.splice(c.indexOf(Exercice),1);
         pre=(ch);
         l=['a','j','b_c'];
-        entrainement+=ch+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\n'
+        entrainement+=ch+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\r\n'
     };
 };
 
