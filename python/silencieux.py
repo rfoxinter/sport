@@ -1,4 +1,4 @@
-from tkinter import Tk,Label,Button
+from tkinter import Tk,Label,Button,Menu,BooleanVar
 from random import choice
 from os import listdir,name
 from time import sleep
@@ -26,7 +26,7 @@ def nouveau_j():
     j.remove('jambes/pogo-jump-single.jpg')
 
 def nouveau():
-    global root,a,j,b_c,e,l,pre,Image,img,BoutonEx,n,entrainement
+    global root,a,a_tf,j,j_tf,b_c,b_c_tf,e,l,pre,Image,img,BoutonEx,n,entrainement
     n+=1
     if n<=4:
         Image.destroy()
@@ -37,7 +37,16 @@ def nouveau():
         e.remove(Exercice)
         entrainement+='e'+'\t'+Exercice[Exercice.find('/')+1:len(Exercice)-4]+'\n'
     else:
-        l.pop(l.index(pre))
+        if not a_tf.get():
+            l.pop(l.index('a'))
+        if not b_c_tf.get():
+            l.pop(l.index('b_c'))
+        if not j_tf.get():
+            l.pop(l.index('j'))
+        if len(l)>1 and pre in l:
+            l.pop(l.index(pre))
+        elif len(l)==0:
+            l=['a','j','b_c']
         ch=choice(l)
         c=eval(ch)
         if len(c)==0:
@@ -59,7 +68,7 @@ def enregistrer():
     f=open(d.today().strftime('entrainements/%d_%m_%Y.txt'),'w',encoding='utf-8')
     f.writelines(entrainement)
 
-global root,a,j,b_c,e,l,pre,Image,img,BoutonEx,n,entrainement
+global root,a,a_tf,j,j_tf,b_c,b_c_tf,e,l,pre,Image,img,BoutonEx,n,entrainement
 n=0
 entrainement='silencieux\n\n'
 root=Tk()
@@ -87,6 +96,22 @@ BoutonEx=Button(root,text='Enregistrer',command=enregistrer)
 BoutonEx.place(x=375.5,y=602.5,height=45,width=75)
 root.title('Sport')
 root.bind('<Return>',nouveau)
+
+a_tf=BooleanVar(root)
+a_tf.set(True)
+b_c_tf=BooleanVar(root)
+b_c_tf.set(True)
+j_tf=BooleanVar(root)
+j_tf.set(True)
+
+menuBar=Menu(root)
+menu=Menu(menuBar,tearoff=0)
+menu.add_checkbutton(label='Abdos',variable=a_tf)
+menu.add_checkbutton(label='Bras',variable=b_c_tf)
+menu.add_checkbutton(label='Jambes',variable=j_tf)
+menuBar.add_cascade(label='Options',menu=menu)
+root.config(menu=menuBar)
+
 root.geometry('600x650')
 if name=='nt':
     import ctypes
