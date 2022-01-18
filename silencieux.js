@@ -9,6 +9,49 @@ var entrainement = 'silencieux\r\n\r\n';
 var l = ['a','j','b_c'];
 var pre = 'j';
 
+var a_tf = true;
+var b_tf = true;
+var j_tf = true;
+function myFunction() {
+    document.getElementById("dropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+function a_cl() {
+    a_tf = !a_tf;
+    if (a_tf) {
+        document.getElementById("abd_tf").style.display = "unset";
+    } else {
+        document.getElementById("abd_tf").style.display = "none";
+    }
+}
+function b_cl() {
+    b_tf = !b_tf;
+    if (b_tf) {
+        document.getElementById("bras_tf").style.display = "unset";
+    } else {
+        document.getElementById("bras_tf").style.display = "none";
+    }
+}
+function j_cl() {
+    j_tf = !j_tf;
+    if (j_tf) {
+        document.getElementById("jam_tf").style.display = "unset";
+    } else {
+        document.getElementById("jam_tf").style.display = "none";
+    }
+}
+
 function nouveau_a(){
     a = ['abdos/alternative-legs-arms-raises.jpg', 'abdos/criss-cross-crunch.jpg', 'abdos/crunch-oblique.jpg', 'abdos/crunch.jpg', 'abdos/double-legs-circles.jpg', 'abdos/flutter-kicks.jpg', 'abdos/high-plank.jpg', 'abdos/leg-pull-in-knee-up.jpg', 'abdos/lying-leg-raise.jpg', 'abdos/plank-downward-dog.jpg', 'abdos/plank-side-knee-tuck.jpg', 'abdos/plank-side.jpg', 'abdos/plank.jpg', 'abdos/russian-twists-obliques.jpg', 'abdos/side-plank-hip-abduction.jpg', 'abdos/superman.jpg', 'abdos/swimmer-swimming.jpg'];
 }
@@ -31,7 +74,20 @@ function nouveau(){
         entrainement+='e'+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\r\n'
     }
     else{
-        l.splice(l.indexOf(pre),1);
+        if (!a_tf) {
+            l.splice(l.indexOf('a'),1)
+        }
+        if (!b_tf) {
+            l.splice(l.indexOf('b_c'),1)
+        }
+        if (!j_tf) {
+            l.splice(l.indexOf('j'),1)
+        }
+        if (l.length>1 && l.includes(pre)) {
+            l.splice(l.indexOf(pre),1);
+        } else if (l.length==0) {
+            l=['a','j','b_c']
+        }
         ch=l[Math.floor(Math.random()*l.length)];
         c=eval(ch);
         if (c.length==0){
