@@ -63,10 +63,7 @@ img{
     overflow: auto;
     top: 5vw;
     width: 15vw;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
+    padding: 0;
     font-size: 2vw;
 }
 
@@ -92,4 +89,8 @@ img{
     margin-top:  0;
     margin-bottom: 0;
     white-space: pre;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
