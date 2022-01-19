@@ -63,7 +63,10 @@ img{
     overflow: auto;
     top: 5vw;
     width: 15vw;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
     font-size: 2vw;
 }
 
