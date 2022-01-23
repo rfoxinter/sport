@@ -1,10 +1,21 @@
+@font-face {
+    font-family: "Calibri";
+    src:url("./calibri.ttf") format("truetype"),
+        url("./calibri.woff2") format("woff2"),
+        url("./calibri.woff") format("woff");
+}
+
+
+* {
+    font-family: "Calibri", Calibri, Arial, sans-serif;
+}
+
 button {
     position: absolute;
     height: 5vw;
     width: 15vw;
     text-align: center;
     font-size: 2vw;
-    font-family: Calibri, Arial, sans-serif;
 }
 
 #exercice {
