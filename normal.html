@@ -9,8 +9,16 @@
 </head>
 <body>
     <div id="img_container"><img src="" id="img"></div>
-    <button onclick="nouveau()" id="exercice">Exercice</button>
-    <button onclick="enregistrer()" id="enregistrer">Enregistrer</button>
+    <button onclick="nouveau()" id="exercice" class="dropbtn">Exercice</button>
+    <button onclick="enregistrer()" id="enregistrer" class="dropbtn">Enregistrer</button>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Options</button>
+        <div id="dropdown" class="dropdown-content">
+            <div onclick="a_cl()" class="option"><p class="text"><tick id="abd_tf" style="display: unset;"> ✓</tick>&Tab;Abdos</p></div>
+            <div onclick="b_cl()" class="option"><p class="text"><tick id="bras_tf" style="display: unset;"> ✓</tick>&Tab;Bras</p></div>
+            <div onclick="j_cl()" class="option"><p class="text"><tick id="jam_tf" style="display: unset;"> ✓</tick>&Tab;Jambes</p></div>
+        </div>
+    </div>
     <script type="text/javascript" src="normal.js"></script>
 </body>
 </html>
