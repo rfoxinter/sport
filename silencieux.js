@@ -107,6 +107,6 @@ function enregistrer(){
     var today = new Date();
     var a = document.createElement("a");
     a.href = window.URL.createObjectURL(new Blob([entrainement], {type: "text/plain"}));
-    a.download = today.getDate()+"_"+('0000'+today.getMonth()+1).slice(-2)+"_"+today.getFullYear()+".txt";
+    a.download = today.getFullYear()+"_"+('0000'+(today.getMonth()+1)).slice(-2)+"_"+('0000'+today.getDate()).slice(-2)+".txt";
     a.click();
 }
