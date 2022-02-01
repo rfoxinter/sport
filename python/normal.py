@@ -56,7 +56,7 @@ def nouveau():
 def enregistrer():
     global entrainement
     from datetime import date as d
-    f=open(d.today().strftime('entrainements/%d_%m_%Y.txt'),'w',encoding='utf-8')
+    f=open(d.today().strftime('entrainements/%Y_%m_%d.txt'),'w',encoding='utf-8')
     f.writelines(entrainement)
 
 global root,a,a_tf,j,j_tf,b_c,b_c_tf,e,l,pre,Image,img,BoutonEx,n,entrainement
