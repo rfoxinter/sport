@@ -25,7 +25,7 @@ def nouveau_j():
     j.remove('jambes/pogo-jump.jpg')
     j.remove('jambes/pogo-jump-single.jpg')
 
-def nouveau():
+def nouveau(event=None):
     global root,a,a_tf,j,j_tf,b_c,b_c_tf,e,l,pre,Image,img,BoutonEx,n,entrainement
     n+=1
     if n<=4:
