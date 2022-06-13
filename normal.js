@@ -69,7 +69,7 @@ function nouveau(){
     n+=1;
     if (n<=4){
         Exercice=e[Math.floor(Math.random()*e.length)];
-        img.src='images/'+Exercice;
+        img.src='python/images/'+Exercice;
         e.splice(e.indexOf(Exercice),1);
         entrainement+='e'+'\t'+Exercice.substring(Exercice.search('/')+1,Exercice.length-4)+'\r\n'
     }
@@ -95,7 +95,7 @@ function nouveau(){
             c=eval(ch);
         };
         Exercice=c[Math.floor(Math.random()*c.length)];
-        img.src='images/'+Exercice;
+        img.src='python/images/'+Exercice;
         c.splice(c.indexOf(Exercice),1);
         pre=(ch);
         l=['a','j','b_c'];
