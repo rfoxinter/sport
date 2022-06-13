@@ -1,7 +1,7 @@
 var e = ['echauffement/forward-leg-swings.jpg', 'echauffement/heels-to-buttocks.jpg', 'echauffement/high-knee-run.jpg', 'echauffement/lateral-leg-swings.jpg', 'echauffement/running.jpg', 'echauffement/walking-lunge.jpg'];
-var a = ['abdos/alternative-legs-arms-raises.jpg', 'abdos/criss-cross-crunch.jpg', 'abdos/crunch-oblique.jpg', 'abdos/crunch.jpg', 'abdos/double-legs-circles.jpg', 'abdos/flutter-kicks.jpg', 'abdos/high-plank.jpg', 'abdos/leg-pull-in-knee-up.jpg', 'abdos/lying-leg-raise.jpg', 'abdos/plank-downward-dog.jpg', 'abdos/plank-side-knee-tuck.jpg', 'abdos/plank-side.jpg', 'abdos/plank.jpg', 'abdos/russian-twists-obliques.jpg', 'abdos/side-plank-hip-abduction.jpg', 'abdos/superman.jpg', 'abdos/swimmer-swimming.jpg'];
-var b_c = ['bras_cardio/dips-bench.jpg', 'bras_cardio/heels-to-buttocks.jpg', 'bras_cardio/high-knee-run.jpg', 'bras_cardio/pushup.jpg', 'bras_cardio/running.jpg', 'bras_cardio/supine-reverse-plank.jpg', 'bras_cardio/wide-pushups.jpg'];
-var j = ['jambes/air-squat.jpg', 'jambes/calves-step-bar.jpg', 'jambes/chair-iso-squat.jpg', 'jambes/frog-squats.jpg', 'jambes/glutes-leg-kickback.jpg', 'jambes/lunge.jpg', 'jambes/walking-lunge.jpg'];
+var a = ['abdos/alternative-legs-arms-raises.jpg', 'abdos/criss-cross-crunch.jpg', 'abdos/crunch-oblique.jpg', 'abdos/crunch.jpg', 'abdos/double-legs-circles.jpg', 'abdos/flutter-kicks.jpg', 'abdos/high-plank.jpg', 'abdos/leg-pull-in-knee-up.jpg', 'jambes/leg-scissors.jpg', 'abdos/lying-leg-raise.jpg', 'abdos/plank-downward-dog.jpg', 'abdos/plank-side-knee-tuck.jpg', 'abdos/plank-side.jpg', 'abdos/plank.jpg', 'abdos/russian-twists-obliques.jpg', 'abdos/side-plank-hip-abduction.jpg', 'abdos/superman.jpg', 'abdos/swimmer-swimming.jpg'];
+var b_c = ['bras_cardio/dips-bench.jpg', 'bras_cardio/heels-to-buttocks.jpg', 'bras_cardio/high-knee-run.jpg', 'jambes/pushup-plank.jpg', 'bras_cardio/pushup.jpg', 'bras_cardio/running.jpg', 'bras_cardio/supine-reverse-plank.jpg', 'bras_cardio/wide-pushups.jpg'];
+var j = ['jambes/air-squat.jpg', 'jambes/bear-squat.jpg', 'jambes/calves-step-bar.jpg', 'jambes/chair-iso-squat.jpg', 'jambes/frog-squats.jpg', 'jambes/glutes-bridge-single.jpg', 'jambes/glutes-bridge.jpg', 'jambes/glutes-leg-kickback.jpg', 'jambes/lunge.jpg', 'jambes/pistol-squat.jpg', 'jambes/walking-lunge.jpg'];
 
 var n = 0;
 const img = document.getElementById('img');
@@ -53,15 +53,15 @@ function j_cl() {
 }
 
 function nouveau_a(){
-    a = ['abdos/alternative-legs-arms-raises.jpg', 'abdos/criss-cross-crunch.jpg', 'abdos/crunch-oblique.jpg', 'abdos/crunch.jpg', 'abdos/double-legs-circles.jpg', 'abdos/flutter-kicks.jpg', 'abdos/high-plank.jpg', 'abdos/leg-pull-in-knee-up.jpg', 'abdos/lying-leg-raise.jpg', 'abdos/plank-downward-dog.jpg', 'abdos/plank-side-knee-tuck.jpg', 'abdos/plank-side.jpg', 'abdos/plank.jpg', 'abdos/russian-twists-obliques.jpg', 'abdos/side-plank-hip-abduction.jpg', 'abdos/superman.jpg', 'abdos/swimmer-swimming.jpg'];
+    a = ['abdos/alternative-legs-arms-raises.jpg', 'abdos/criss-cross-crunch.jpg', 'abdos/crunch-oblique.jpg', 'abdos/crunch.jpg', 'abdos/double-legs-circles.jpg', 'abdos/flutter-kicks.jpg', 'abdos/high-plank.jpg', 'abdos/leg-pull-in-knee-up.jpg', 'jambes/leg-scissors.jpg', 'abdos/lying-leg-raise.jpg', 'abdos/plank-downward-dog.jpg', 'abdos/plank-side-knee-tuck.jpg', 'abdos/plank-side.jpg', 'abdos/plank.jpg', 'abdos/russian-twists-obliques.jpg', 'abdos/side-plank-hip-abduction.jpg', 'abdos/superman.jpg', 'abdos/swimmer-swimming.jpg'];
 }
 
 function nouveau_b_c(){
-    b_c = ['bras_cardio/dips-bench.jpg', 'bras_cardio/heels-to-buttocks.jpg', 'bras_cardio/high-knee-run.jpg', 'bras_cardio/pushup.jpg', 'bras_cardio/running.jpg', 'bras_cardio/supine-reverse-plank.jpg', 'bras_cardio/wide-pushups.jpg'];
+    b_c = ['bras_cardio/dips-bench.jpg', 'bras_cardio/heels-to-buttocks.jpg', 'bras_cardio/high-knee-run.jpg', 'jambes/pushup-plank.jpg', 'bras_cardio/pushup.jpg', 'bras_cardio/running.jpg', 'bras_cardio/supine-reverse-plank.jpg', 'bras_cardio/wide-pushups.jpg'];
 }
 
 function nouveau_j(){
-    j = ['jambes/air-squat.jpg', 'jambes/calves-step-bar.jpg', 'jambes/chair-iso-squat.jpg', 'jambes/frog-squats.jpg', 'jambes/glutes-leg-kickback.jpg', 'jambes/lunge.jpg', 'jambes/walking-lunge.jpg'];
+    j = ['jambes/air-squat.jpg', 'jambes/bear-squat.jpg', 'jambes/calves-step-bar.jpg', 'jambes/chair-iso-squat.jpg', 'jambes/frog-squats.jpg', 'jambes/glutes-bridge-single.jpg', 'jambes/glutes-bridge.jpg', 'jambes/glutes-leg-kickback.jpg', 'jambes/lunge.jpg', 'jambes/pistol-squat.jpg', 'jambes/walking-lunge.jpg'];
 }
     
 
